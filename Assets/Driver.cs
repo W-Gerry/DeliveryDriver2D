@@ -21,10 +21,18 @@ public class Driver : MonoBehaviour
     void OnTriggerEnter2D(Collider2D other) {
         if (other.tag == "Boost") {
             moveSpeed = boostSpeed;
+            Debug.Log(moveSpeed);
         }
 
         if (other.tag == "Slow") {
             moveSpeed = slowSpeed;
+            Debug.Log(moveSpeed);
         }
+    }
+
+    // Non-specific collision check to slow down vehicle.
+    void OnCollisionEnter2D(Collision2D other) {
+        moveSpeed = slowSpeed;
+        Debug.Log(moveSpeed);
     }
 }

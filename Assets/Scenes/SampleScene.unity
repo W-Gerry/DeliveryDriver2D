@@ -934,7 +934,7 @@ GameObject:
   - component: {fileID: 134856174}
   m_Layer: 0
   m_Name: Slow Down
-  m_TagString: Untagged
+  m_TagString: Slow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -968,7 +968,7 @@ EdgeCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -7046,7 +7046,7 @@ GameObject:
   - component: {fileID: 1065706950}
   m_Layer: 0
   m_Name: Speed Up
-  m_TagString: Untagged
+  m_TagString: Boost
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9685,6 +9685,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   steerSpeed: 300
   moveSpeed: 20
+  slowSpeed: 15
+  boostSpeed: 30
 --- !u!212 &1398560100
 SpriteRenderer:
   m_ObjectHideFlags: 0
